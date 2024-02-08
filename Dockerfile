@@ -24,7 +24,7 @@ RUN adduser --uid $UID --gid $GID --disabled-password --gecos "" nonroot
 RUN echo 'nonroot ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 # copie des cron
-COPY lufi-cron --chmod=644 /etc/cron.d/lufi-cron
+COPY --chmod=644 lufi-cron /etc/cron.d/lufi-cron
 #RUN chmod 0644 /etc/cron.d/lufi-cron
 
 RUN cpan Carton
