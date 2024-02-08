@@ -1,6 +1,9 @@
 FROM debian:12-slim
 
 ARG LUFI_VERSION=0.07.0
+ARG GID
+ARG UID
+
 
 USER root
 
