@@ -7,7 +7,7 @@ services:
   lufi:
     build:
      context: .
-      args:
+     args:
         UID: ${HOST_UID:-1000}
         GID: ${HOST_GID:-1000}
     container_name: lufi-app
